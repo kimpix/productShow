@@ -1,0 +1,27 @@
+
+<center>
+          <div class="box">
+               <div ng-show="imgShown.isSetImg(img.id)" ng-repeat="img in product.weekend">
+                    <img  class="img img-circle img-thumbnail center-block"  ng-src="{{img.imageUrl}}" ng-class="{ slide:'selected', slide_next:''}"/>
+     	          <h2>{{img.label}}</h2>
+                    <span ng-repeat="theme in img.topTheme">{{theme}} //</span>
+               </div>
+           </div>
+</center>
+	      	<div class="gallery" class="thumbswrapper" >
+
+          				<ul class="clearfix">
+          				  
+          				  <li class="small-image pull-left " ng-repeat="img in product.weekend"> 
+
+          				  		
+          				    <a href  ng-click="imgShown.setImg(img.id)"><img class="thumbnail" ng-src="{{img.imageUrl}}" /> </a>
+          				  	
+
+          				  </li>
+
+ 
+          	
+        			          </ul>
+
+               </div>
